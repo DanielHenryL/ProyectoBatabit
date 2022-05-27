@@ -1,10 +1,4 @@
-/* 
-1.posicionamiento(static,absolute,relative,fixed)
-2.Modelo de caja(margin, border,padding, content)
-3.Tipografia(tipos y tamaños de fuentes)
-4.Estilos visuales(box-shadow, border-radius, gradient, etc)
-5.Otros (reglas Css y más)
- */
+
 
 *{
     box-sizing: border-box;
@@ -27,4 +21,68 @@ html{
     --grey:#BABABA;
     --off-white:#FAF8F7;
     --just-white:#FFF;
+}
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 32rem;
+    height: 33.4rem;
+    text-align: center;
+    align-items: center;
+    background: var(--header-background);
+}
+header img {
+    width: 151px;
+    height: 24px;
+    margin-top: 78px;
+}
+.header--title-container{
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 90rem;
+    height: 21.8rem;
+    margin-top: 4rem;
+}
+.header--title-container h1{
+    font-weight: 700;
+    font-size: 2.4rem;
+    /* tamaño del guion de linea */
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.header--title-container p{
+    margin-top: 2.4rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+.header--title-container a{
+    position: absolute;
+    left: calc(50% - 11.8rem);
+    top: 27rem;
+    display: block;
+    background-color: var(--off-white);
+    margin-top: 3.5rem;
+    padding: 1.5rem;
+    width: 22.9rem;
+    height: 4.8rem;
+    /* agregar sombra */
+    box-shadow: 0 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+.header--title-container a span{
+    display: inline-block;
+    background-image: url('./assets/icons/down-arrow.svg');
+    width: 1.3rem;
+    height: 0.8rem;
+    margin-left: 1rem;
 }
