@@ -1,0 +1,4 @@
+.plans-container--slider,
+.main-tables-container{
+    overflow-x: hidden;
+}

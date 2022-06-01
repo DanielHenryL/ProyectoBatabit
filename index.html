@@ -12,6 +12,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 850px)">
+    <link rel="stylesheet" href="./css/minTablet.css" media="(min-width: 600px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1650px)">
   </head>
   <body>
     <header>
@@ -69,8 +72,6 @@
               <p><b> Actualizado:</b> 29 de Mayo 15:42</p>
             </div>
           </div>
-        </section>
-        <section class="main-tables-container">
           <div class="main-currency-table">
             <p class="currency-table--title title-color-corredoras">Corredoras</p>
               <div class="currency-table--container">
@@ -140,17 +141,52 @@
         </div>
         <section class="plans-container--slider">
           <article class="plans-container--card">
-            <p>Recomendado</p>
-            <div>
-              <h3>Pago Anual</h3>
-              <p><span>$</span> 99</p>
-              <p>*Ahorras $129 comparado al plan mensual.</p>
-              <button>Escager este <span>a</span></button>
+            <p class="promo recommended">Recomendado</p>
+            <div class="plan-info-container">
+              <h3 class="plan-card--title">Pago Anual</h3>
+              <p class="plan-card--price simbolo-dollar-recomendado"><span>$</span> 99</p>
+              <p class="plan-card--saving">
+                *Ahorras $129 comparado al plan mensual.
+              </p>
+              <button class="plan-card--ca ca-recomendado">Escager este <span></span></button>
+            </div>
+          </article>
+          <article class="plans-container--card">
+            <p class="promo basico">Básico</p>
+            <div class="plan-info-container">
+              <h3 class="plan-card--title">Pago Mensual</h3>
+              <p class="plan-card--price simbolo-dollar-mensual"><span>$</span> 19</p>
+              <p class="plan-card--saving">
+                *Plan basico aunque con todas las ventajas.
+              </p>
+              <button class="plan-card--ca ca-mensual">Escager este<span></span></button>
+            </div>
+          </article>
+          <article class="plans-container--card">
+            <p class="promo limitado">Limitado</p>
+            <div class="plan-info-container">
+              <h3 class="plan-card--title">Un solo pago</h3>
+              <p class="plan-card--price simbolo-dollar-limitado"><span>$</span> 199</p>
+              <p class="plan-card--saving">
+                *Exclusivo para los primeros 100 clientes con un precio especial
+              </p>
+              <button class="plan-card--ca ca-limitado">Escager este <span></span></button>
             </div>
           </article>
         </section>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section>
+        <ul class="footer-list">
+          <li><a href="#">Linkedin</a></li>
+          <li><a href="#">Crunchbase</a></li>
+          <li><a href="#">Hakernews</a></li>
+        </ul>
+      </section>
+      <section>
+        <img src="./assets/img/logo-footer.svg" alt="Logo de batatabit 2022">
+      </section>
+    </footer>
   </body>
 </html>
